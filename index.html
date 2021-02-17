@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.google.com/specimen/Exo+2" rel="stylesheet">
+
+    <title>text.AI</title>
+</head>
+
+<body>
+<div id="particles-js"></div>
+<div class="wrapper">
+    <div class="container">
+        <main class="main">
+            <div class="title">text.AI</div>
+            <div class="subTitle" id="subtitle">Intelligent App for text processing</div>
+            <div class="content">
+                <div class="subContent">
+                    <form method="post">
+                        <div class="text">
+                            <textarea name="value" id="value" cols="30" rows="10"
+                                      placeholder="Input text..."></textarea>
+                        </div>
+                        <div class="manage">
+                            <select name="manageList" id="manageList">
+                                <option>Uniqueness</option>
+                                <option disabled>Replays</option>
+                                <option disabled>Typos</option>
+                                <option disabled>Validation</option>
+                            </select>
+                            <button id="send" class="button" type="button">Check</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="img" class="subContent">
+                    <img class="image" src="src/main.png"
+                         alt="brain">
+                    <div id="result" class="result"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="container">
+        <footer class="footer">
+            <div class="logo">
+                <a href="http://devincubator.by/"><img
+                        src="src/logo.png" alt="logo"></a>
+                <a href="http://devincubator.by/"><img
+                        src="src/incubator.png"
+                        alt="text"></a>
+            </div>
+            <div class="developers">Pavel Chukhonski, Roman Trukhanovich, 2021</div>
+            <div class="social">
+                <a href="https://github.com/PaulChukhonski/text.AI/"><img
+                        src="src/github.png" alt="github"></a>
+                <a href="http://vk.com/"><img class="img-vk-logo"
+                                              src="src/vk.png"
+                                              alt="vk"></a>
+                <a href="http://facebook.com/"><img
+                        src="src/facebook.png"
+                        alt="facebook"></a>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/5c6ff8eb8e.js" crossorigin="anonymous"></script>
+<script src="src/particles.js"></script>
+<script src="src/app.js"></script>
+<script src="src/serverRequest.js"></script>
+
+</body>
+</html>
